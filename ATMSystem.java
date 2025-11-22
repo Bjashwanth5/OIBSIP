@@ -77,8 +77,8 @@ public class ATMSystem {
 
         if (amount > 0 && balance >= amount) {
             balance -= amount;
-            transactionHistory.add("Withdrawn: ₹" + amount);
-            System.out.println("Withdrawal of ₹" + amount + " successful.");
+            transactionHistory.add("Withdrawn: " + amount);
+            System.out.println("Withdrawal of " + amount + " successful.");
         } else {
             System.out.println("Insufficient funds or invalid amount!");
         }
@@ -92,8 +92,8 @@ public class ATMSystem {
 
         if (amount > 0) {
             balance += amount;
-            transactionHistory.add("Deposited: ₹" + amount);
-            System.out.println("₹" + amount + " deposited successfully.");
+            transactionHistory.add("Deposited: " + amount);
+            System.out.println("" + amount + " deposited successfully.");
         } else {
             System.out.println("Invalid amount. Try again!");
         }
@@ -110,8 +110,8 @@ public class ATMSystem {
 
         if (amount > 0 && balance >= amount) {
             balance -= amount;
-            transactionHistory.add("Transferred ₹" + amount + " to Account " + acc);
-            System.out.println("Successfully transferred ₹" + amount + " to account " + acc);
+            transactionHistory.add("Transferred " + amount + " to Account " + acc);
+            System.out.println("Successfully transferred " + amount + " to account " + acc);
         } else {
             System.out.println("Invalid transfer or insufficient balance!");
         }
